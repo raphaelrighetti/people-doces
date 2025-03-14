@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-brand: #F283E3;
+  --secondary-brand: #BCD0F5;
+  --black: #1C2738;
+  --lighter-black: #313E52;
+  --primary-background: #E7F8FE;
+  --secondary-background: #E0F1F7;
+  --white: #F4F4F4;
+  --darker-black: #111111;
+  --grey: #C9CDD3;
+  --purple: #C2B7FC;
+  --whatsapp: #17980E;
+  --transition-time: 200ms;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5em;
+  padding: 1em 2em;
+  font-size: 1em;
+  font-weight: 400;
+  background: none;
+  letter-spacing: .04em;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cabecalho-principal {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(25%, 4);
+  box-sizing: border-box;
+  padding: 1em 12.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.brand-name {
+  font-family: "Indie Flower", serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--main-brand);
+  transition: var(--transition-time);
+}
+
+.brand-name:hover {
+  color: var(--secondary-brand);
+}
+
+.cabecalho-principal nav {
+  grid-column: 2/2;
+}
+
+.cabecalho-principal nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+.carrinho-button {
+  border: none;
+  color: var(--main-brand);
+  display: flex;
+  align-items: center;
+}
+
+.carrinho-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.link-pagina {
+  color: var(--lighter-black);
+  transition: var(--transition-time);
+}
+
+.link-pagina:hover {
+  color: var(--secondary-brand);
+}
+
+.whatsapp-button {
+  color: var(--whatsapp);
+  border: solid 2px var(--whatsapp);
+  width: 10em;
+}
+
+.contato-button {
+  color: var(--main-brand);
+  border: solid 2px var(--main-brand);
+  width: 10em;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--primary-background);
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  background: none;
+}
+
+.carousel-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-brand);
+  width: 85%;
+  margin-left: auto;
+}
+
+.carousel-item img {
+  width: 80%;
+  grid-column: 1/2;
+}
+
+.information {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin-right: auto;
+  background-color: var(--white);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.prev {
+  left: 1em;
+}
+
+.next {
+  right: 1em;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>People Doces</title>
+</head>
+
+<body>
+  <header class="cabecalho-principal">
+    <h1><a class="brand-name" href="./index.html">People Doces</a></h1>
+    <nav>
+      <ul>
+        <li><a href="" class="link-pagina">Quem somos</a></li>
+        <li>
+          <button class="carrinho-button">
+            <img src="assets/icons/cart-shopping.svg" alt="Carrinho">
+          </button>
+        </li>
+        <li><button class="contato-button"><a>Comprar</a></button></li>
+        <li><button class="whatsapp-button"><a>WhatsApp</a></button></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="carousel-container">
+    <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+    <div class="carousel">
+      <div class="carousel-item">
+        <div class="carousel-img-container">
+          <img src="./assets/images/pexels-gesel-2190381.jpg" alt="Bolo Prestígio">
+        </div>
+        <div class="information">
+          <h3>Bolo Prestígio</h3>
+          <p>R$ 12,00</p>
+          <p>Massa de chocolate, recheio de coco e cobertura de chocolate.</p>
+          <div class="buttons">
+            <button>Adicionar ao Carrinho</button>
+            <button>Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-img-container">
+          <img src="./assets/images/pexels-pixabay-162688.jpg" alt="Bolo Sensação">
+        </div>
+        <div class="information">
+          <h3>Bolo Sensação</h3>
+          <p>R$ 12,00</p>
+          <p>Massa de chocolate, recheio de coco e cobertura de chocolate.</p>
+          <div class="buttons">
+            <button>Adicionar ao Carrinho</button>
+            <button>Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-img-container">
+          <img src="./assets/images/pexels-pixabay-264939.jpg" alt="Bolo Tradicional">
+        </div>
+        <div class="information">
+          <h3>Bolo Tradicional</h3>
+          <p>R$ 12,00</p>
+          <p>Massa de chocolate, recheio de chocolate e cobertura de chocolate.</p>
+          <div class="buttons">
+            <button>Adicionar ao Carrinho</button>
+            <button>Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-img-container">
+          <img src="https://via.placeholder.com/300" alt="Bolo John Lemon">
+        </div>
+        <div class="information">
+          <h3>Bolo John Lemon</h3>
+          <p>R$ 12,00</p>
+          <p>Massa de limão, recheio de limão e cobertura de limão.</p>
+          <div class="buttons">
+            <button>Adicionar ao Carrinho</button>
+            <button>Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+  </section>
+
+  <script src="./carousel.js"></script>
+</body>
+
+</html>
