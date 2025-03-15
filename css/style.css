@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --main-brand: #F283E3;
@@ -13,6 +13,9 @@
   --purple: #C2B7FC;
   --whatsapp: #17980E;
   --transition-time: 200ms;
+  --montserrat: "Montserrat", sans-serif;
+  --indie-flower: "Indie Flower", cursive;
+  --emblema-one: "Emblema One", system-ui
 }
 
 button {
@@ -95,10 +98,14 @@ a {
   color: var(--whatsapp);
   border: solid 2px var(--whatsapp);
   width: 10em;
+  font-family: var(--montserrat);
+  font-weight: 600;
 }
 
 .contato-button {
   color: var(--main-brand);
   border: solid 2px var(--main-brand);
   width: 10em;
+  font-family: var(--montserrat);
+  font-weight: 600;
 }

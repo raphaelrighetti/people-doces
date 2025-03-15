@@ -1,3 +1,22 @@
+:root {
+  --main-brand: #F283E3;
+  --secondary-brand: #BCD0F5;
+  --black: #1C2738;
+  --lighter-black: #313E52;
+  --primary-background: #E7F8FE;
+  --secondary-background: #E0F1F7;
+  --white: #F4F4F4;
+  --brighter-white: #FFF;
+  --darker-black: #111111;
+  --grey: #C9CDD3;
+  --purple: #C2B7FC;
+  --whatsapp: #17980E;
+  --transition-time: 200ms;
+  --montserrat: "Montserrat", sans-serif;
+  --indie-flower: "Indie Flower", cursive;
+  --emblema-one: "Emblema One", system-ui
+}
+
 .carousel-container {
   position: relative;
   width: 100%;
@@ -24,25 +43,88 @@
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-brand);
-  width: 85%;
+  width: 100%;
   margin-left: auto;
+  padding: 2em;
 }
 
 .carousel-item img {
-  width: 80%;
+  width: 100%;
   grid-column: 1/2;
 }
 
 .information {
+  font-family: var(--montserrat);
   grid-column: 2/3;
   display: flex;
   flex-direction: column;
-  gap: 2em;
   justify-content: center;
   align-items: center;
   width: 85%;
   margin-right: auto;
+  padding: 2em;
   background-color: var(--white);
+}
+
+.information h3 {
+  font-family: var(--emblema-one);
+  font-size: 2em;
+  color: var(--main-brand);
+}
+
+.price {
+  color: var(--secondary-brand);
+  font-weight: 700;
+}
+
+.information-header {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--brighter-white);
+  padding: 2em 4em;
+  border: solid 1px var(--lighter-black);
+  border-bottom: solid 2px var(--grey);
+  border-top-right-radius: 5em;
+  border-top-left-radius: 5em;
+}
+
+.information-description {
+  align-self: flex-start;
+  padding: 20% 4em;
+  background-color: var(--brighter-white);
+  border: solid 1px var(--lighter-black);
+  border-bottom: solid 1px var(--grey);
+  border-top: none;
+  width: 100%;
+  line-height: 1.5em;
+  letter-spacing: .04em;
+  font-size: 1.1em;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--brighter-white);
+  border: solid 1px var(--lighter-black);
+  border-top: solid 1px var(--grey);
+  padding: 2em 4em;
+  border-bottom-right-radius: 5em;
+  border-bottom-left-radius: 5em;
+}
+
+.buttons button {
+  font-family: var(--montserrat);
+  color: var(--white);
+  background-color: var(--main-brand);
+  border: none;
+  font-weight: 600;
+  width: 12em;
+  height: 62px;
 }
 
 .prev,
