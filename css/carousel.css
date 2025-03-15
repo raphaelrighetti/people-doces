@@ -1,3 +1,18 @@
+.carousel-banner {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-brand);
+}
+
+.carousel-banner h2 {
+  font-size: 3em;
+  font-family: var(--montserrat);
+  color: var(--white);
+}
+
 :root {
   --main-brand: #F283E3;
   --secondary-brand: #BCD0F5;
